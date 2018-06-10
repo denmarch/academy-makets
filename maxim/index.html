@@ -38,26 +38,201 @@
               </ul>
             </nav>
 
-            <div class="header__item"><a class="header__link-order">Заказать расчет</a></div>
+            <div class="header__item"><a class="header__link-order" href="#">Заказать расчет</a></div>
 
           </div>
         </div>
-      </div>
+      </div>                        <!-- див от контейнера убрать вниз!-->
     </header>
 
     <main class="main">
 
-      <section class="page">
+      <section class="slider">
 
-        <span class="page__subject">СТУДИЯ ДИЗАЙНА</span>
+        <div class="slider__banner">
 
-        <h1 class="page__title">Дизайн & Полиграфия & Наружная реклама<h1>
+          <div class="container">
 
-        <div class="">
+            <div class="slider__title">СТУДИЯ ДИЗАЙНА</div>
+
+            <div class="slider__slogan">Дизайн & Полиграфия & Наружная реклама</div>
+
+            <div class="slider__block">
+
+              <div class="slider__list">          <!--уточнить название класса!-->
+
+                <div class="slider__item-calculation">Расчет стоимости</div>
+
+                <div class="slider__item-feedback">
+                  <form class="slider__userform" action="#" method="get">
+                    <input class="slider__username" type="text" name="username-text" placeholder="ИМЯ">
+                    <input class="slider__userphone" type="text" name="userphone-text" placeholder="ТЕЛЕФОН">
+                  </form>
+
+                  <button class="slider__call-btn call-btn" type="button">Позвоните нам</button>
+              <!--<div class="slider__agree">Согласен с правилами обработки данных, прописанных в политике конфеденциальности</div>!-->
+                </div>
+              </div>
+
+              <form class="slider__checked" action="#" method="get">
+                <label>
+                  <input type="checkbox" checked>
+                  Согласен с правилами обработки данных, прописанных в политике конфеденциальности
+                </label>
+              </form>
+            </div>
+         </div>
+       </div>
+      </section>
+
+      <section class="services">
+
+        <div class="services__slogan">Мы все <span class="services__slogan-boldtext">это делаем!</span></div>
+
+        <ul class="services__list">
+          <li class="services__item"><a class="services__item-link greytext greytext--textblack-border" href="#">ДИЗАЙН</a></li>
+          <li class="services__item"><a class="services__item-link greytext" href="#">ПОЛИГРАФИЯ</a></li>
+          <li class="services__item"><a class="services__item-link greytext" href="#">НАРУЖНАЯ РЕКЛАМА</a></li>
+          <li class="services__item"><a class="services__item-link greytext" href="#">3D РЕКЛАМА</a></li>
+          <li class="services__item"><a class="services__item-link greytext" href="#">ПРЕСС-ВОЛЛ</a></li>
+        </ul>
+
+        <ul class="services__list-desc">
+          <li class="services__item-desc">
+            <div class="services__icon"><img class="services__image" src="#" alt="Иконка для логотипа"></div>
+            <div class="services__title">ЛОГОТИП</div>
+            <div class="services__text">Логотип представляет собой название сущности, которую он идентифицирует, в виде стилизованных букв и/или идеограммы.</div>
+          </li>
+
+          <li class="services__item-desc">
+            <div class="services__icon"><img class="services__image" src="#" alt="Иконка для фирменного стиля"></div>
+            <div class="services__title">ФИРМЕННЫЙ СТИЛЬ</div>
+            <div class="services__text">Выражается в атрибутах корпоративного стиля. То же, что и идентичность бренда, только по отношению к корпоративному бренду.</div>
+          </li>
+
+          <li class="services__item-desc">
+            <div class="services__icon"><img class="services__image" src="#" alt="Иконка для дизайна сайта"></div>
+            <div class="services__title">ЛОГОТИП</div>
+            <div class="services__text">Разновидность дизайна, в задачи которой входит проектирование пользовательских веб-интерфейсов для сайтов.</div>
+          </li>
+        </ul>
+
+        <div class="services__order"><a class="services__order-link order-link" href="#">Заказать услугу</a></div>
+
+      </section>
+
+      <section class="feedback">
+
+        <div class="feedback__banner">
+
+          <div class="container">
+
+            <div class="feedback__top">
+
+                <div class="feedback__slogan">Хочу <span class="feedback__slogan-boldtext">заказать услугу!</span></div>  <!--возможно добавить модификатор!-->
+
+                <div class="feedback__text">
+                  Напишите сообщение или позвоните по одному из номеров: <span class="feedback__text-bold">8 950 908-35-00</span> или <span class="feedback__text-bold">8 915 590-33-95</span>
+                </div>
+
+            </div>
+
+            <div class="feedback__bottom">
+
+              <div class="feedback__call-me">Хотите <span class="feedback__call-me-boldtext">заказать звонок?</span></div>
+
+              <div class="feedback__user-list">    <!--уточнить названиекласса!-->
+
+                <form class="feedback__userform" action="#" method="get">
+                  <input class="feedback__userphone" type="text" name="userphone-text" placeholder="ВАШ ТЕЛЕФОН">
+                </form>
+
+                <button class="feedback__call-back" type="button">Заказать звонок</button>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
 
-    </section>
+      <section class="portfolio">
 
+        <div class="container">
+
+          <div class="portfolio__title">Наши <span class="portfolio__title-boldtext">работы</span></div>
+
+          <ul class="portfolio__list">
+            <li class="portfolio__item"><a class="services__item-link greytext greytext--textblack-border" href="#">ВСЕ</a></li>
+            <li class="portfolio__item"><a class="services__item-link greytext" href="#">ДИЗАЙН</a></li>
+            <li class="portfolio__item"><a class="services__item-link greytext" href="#">ПОЛИГРАФИЯ</a></li>
+            <li class="portfolio__item"><a class="services__item-link greytext" href="#">НАРУЖНАЯ РЕКЛАМА</a></li>
+            <li class="portfolio__item"><a class="services__item-link greytext" href="#">3D РЕКЛАМА</a></li>
+            <li class="portfolio__item"><a class="services__item-link greytext" href="#">ПРЕСС-ВОЛЛ</a></li>
+          </ul>
+
+          <ul class="portfolio__joblist">
+
+            <li class="portfolio__jobitem">
+              <div class="portfolio__icon"><img class="portfolio__image" src="#" alt="Оранжевая линия"></div>
+              <div class="portfolio__jobitem-title">Оранжевая линия</div>
+              <div class="portfolio__desc">Дизайн</div>
+            </li>
+
+            <li class="portfolio__jobitem">
+              <div class="portfolio__icon"><img class="portfolio__image" src="#" alt="Автоленд"></div>
+              <div class="portfolio__jobitem-title">Автоленд</div>
+              <div class="portfolio__desc">Наружная реклама</div>
+            </li>
+
+            <li class="portfolio__jobitem">
+              <div class="portfolio__icon"><img class="portfolio__image" src="#" alt="Богатырские окна"></div>
+              <div class="portfolio__jobitem-title">Богатырские окна</div>
+              <div class="portfolio__desc">Дизайн</div>
+            </li>
+
+            <li class="portfolio__jobitem">
+              <div class="portfolio__icon"><img class="portfolio__image" src="#" alt="Фарш говяжий"></div>
+              <div class="portfolio__jobitem-title">Фарш говяжий</div>
+              <div class="portfolio__desc">Дизайн</div>
+            </li>
+
+            <li class="portfolio__jobitem">
+              <div class="portfolio__icon"><img class="portfolio__image" src="#" alt="Шашлык по-баварски"></div>
+              <div class="portfolio__jobitem-title">Шашлык по-баварски</div>
+              <div class="portfolio__desc">Дизайн</div>
+            </li>
+
+            <li class="portfolio__jobitem">
+              <div class="portfolio__icon"><img class="portfolio__image" src="#" alt="Монетка"></div>
+              <div class="portfolio__jobitem-title">Монетка</div>
+              <div class="portfolio__desc">3D реклама</div>
+            </li>
+
+            <li class="portfolio__jobitem portfolio__jobitem--big">
+              <div class="portfolio__icon portfolio__icon--big"><img class="portfolio__image" src="#" alt="Велес"></div>
+              <div class="portfolio__jobitem-title">Велес</div>
+              <div class="portfolio__desc">Дизайн</div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="hotnew">    <!--уточнить название класса!-->
+
+        <div class="hotnew__banner">
+
+          <div class="container">
+
+            <div class="hotnew__title">3D РЕКЛАМА</div>
+            <div class="hotnew__slogan">Горячая новинка на рынке услуг</div>
+            <div class="hotnew__order"><a class="hotnew__order-link order-link" href="#">Заказать услугу</a></div>
+          </div>
+         </div>
+       </section>
+
+       <section class="map">
+         <div class="map__picture"><img class="map__image" src="#" alt="Как добраться"></div>
+       </section>
+       
     </main>
 
 
